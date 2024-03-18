@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(240deg, #3f0874, #ae00ff) no-repeat;
+}
+.container{
+    height: 400px;
+    min-width: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+.icon-image{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.25);
+}
+.icon-image img{
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3f0874;
+}
+.hover-image{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    bottom:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.25);
+    border-radius: 25px;
+    z-index: 0;
+    transition: transform 0.5s, z-index 0s, left 0.5s;
+    transition-delay: 0s, 0.5s, 0.5s;
+}
+.hover-image img{
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border: solid 3px white;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    padding: 0 10px;
+}
+.content::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: white;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.content .detalhe{
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+}
+.icon-image:hover .detalhe{
+    transition: all 0.3s ease;
+    transition-delay: 0.9s;
+    opacity: 1;
+    transform: translateY(4px);
+}
+.content .detalhe::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: white;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.detalhe .nome span{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.detalhe .apelido span{
+    font-size: 17px;
+    color: #3f0874;
+    margin: -3px 0 5px 0;
+}
+.icon-image:hover .hover-image:hover{
+    left: -200px;
+    z-index: 12;
+    transform: translateX(80px);
+    transition: left 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0s, 0.5s, 0.5s;
+}
+.last:hover .detalhe{
+transition-delay: 0s;
+}

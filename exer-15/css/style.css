@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&family=UnifrakturMaguntia&display=swap');
+:root{
+    --azul-escuro:#040A19;
+    --azul-escuro2:#041643;
+    --azul:#060F84;
+    --cinza:#888696;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+body{
+    
+    background: linear-gradient(190deg, var(--azul-escuro), var(--azul)) no-repeat;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8%;
+}
+h1{
+    font-family: "Sedgwick Ave", cursive;
+    font-weight: bold;
+   font-size: 3.5rem;
+   color: var(--cinza);
+   margin-bottom: 5px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.card img{
+    width: 80%;
+    height: 80%;
+}
+.icons{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin: 5px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    border-radius: 50%;
+    padding: 1%;
+    height: 35px;
+    text-align: center;
+}
+.icon i{
+    font-size: 30px;
+}
+.spty, .ttk{
+    background-color: black;
+}
+.fa-spotify{
+    color: #1DD760;
+}
+.insta{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+.fa-instagram, .fa-youtube, .fa-tiktok{
+    color: white;
+}
+.yt{
+    background-color: red;
+}
+.text{
+    color: white;
+    line-height: 1.3rem;
+}
+span{
+    font-family: "Sedgwick Ave", cursive;
+    color: #1221f5;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}

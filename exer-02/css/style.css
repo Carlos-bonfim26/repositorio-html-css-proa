@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lily+Script+One&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #b01034;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Archivo Black", sans-serif;
+}
+#logo{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+#logo img{
+    width: 8rem;
+    height: 6rem;
+}
+#logo img:hover{
+    transition: 1s;
+    width: 10rem;
+    height: 7.5rem;
+}
+#logo h1{
+    color: #ed8073;
+  font-weight: 400;
+  font-style: normal;
+}
+nav{
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    padding: 0.5rem;
+    color: black;
+}
+nav li a:hover{
+    transition: 1s;
+    color: #ed8073;
+    font-size: 20px;
+    font-weight: 200;
+}
+section{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+    padding: 2.5rem;
+    text-align: justify;
+}
+.container-text{
+    width: 70%;
+}
+.container-text p{
+    color: #feead8;
+}
+.container-text h2,h3{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 5px;
+}
+h3 span{
+    color: #ed8073;
+}
+h2 span{
+    font-size: 40px;
+    font-family: "Lily Script One", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    color: #90b0be;
+}
+.container-text button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    margin: 0.7rem;
+    background-color: #ed8073;
+    color: #b01034;
+    font-size: 18px;
+    font-weight: 300;
+}
+.container-text button:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: #ed8073;
+    border: #ed8073 solid 2px;
+    transform: translateY(-10px);
+}
+.container-icons{
+   
+    padding: 0.5rem;
+    display: flex;
+    font-size: 20px;
+
+   
+}
+.container-icons .icon{
+    padding: 0.4rem;
+    margin: 8px;
+    border-radius: 50%;
+}
+.container-icons .icon:hover{
+    transition: 1s;
+background-color: black;
+color: #ed8073;
+transform: translateY(-10px);
+}
+#circle{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #ed8073;
+clip-path: circle(50% at bottom right);
+}
+.container-img{
+    padding: 1;
+    display: flex;
+    flex-direction: row;
+   position: absolute;
+  right: -100px;
+  bottom: -150px;
+}
+.container-img img{
+    margin: -50px;
+}
+#l2{
+    margin: -130px;
+    height: 500px;
+    width: 450px;
+}
+#garrafa{
+    margin: -130px;
+    height: 400px;
+    width: 350px;
+}
+.lata1, .lata2{
+    height: 300px;
+    width: 260px;
+}
+#garrafa, .lata2{
+transform:rotate(-15deg);
+}
+#l2{
+    transform:rotate(5deg);
+}
+.lata1{
+    transform:rotate(15deg);
+}

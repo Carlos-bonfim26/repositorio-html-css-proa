@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: linear-gradient(240deg, #064a9c, #111328) no-repeat;
+  color: white;
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.logo img {
+  width: 55px;
+  height: 60px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0.8rem;
+}
+nav ul li:hover {
+  transition: 1s;
+  font-weight: 500;
+  font-size: 20px;
+  color: #7bff00;
+  border-bottom: 1px solid #7bff00;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  height: 100%;
+}
+.container-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 140px;
+}
+.info p {
+  width: 80%;
+}
+.info h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #7bff00;
+  margin-bottom: 5px;
+}
+.info span {
+  color: #064a9c;
+}
+.info h2 {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.logo2 img {
+  width: 18rem;
+  height: 20rem;
+}
+.logo2 {
+  width: 50%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  animation: ease;
+  animation-duration: 3s;
+  animation-name: logo;
+}
+@keyframes logo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.container-icon {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 15px;
+  animation: ease;
+  animation-duration: 3s;
+  animation-name: icons;
+}
+@keyframes icons {
+    from{
+        transform: translate(-450px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+main h2 {
+  margin: 8px;
+  text-align: center;
+  width: 75%;
+  font-size: 24px;
+}
+.icon a {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 10px;
+  text-align: center;
+  border-radius: 80%;
+  border: 2px solid #7bff00;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: #7bff00;
+}
+.icon a:hover {
+  transition: 1s all;
+  background-color: #7bff00;
+  color: #111328;
+}
+.icon:hover {
+  transition: all 1s;
+  transform: translateY(-10px);
+}

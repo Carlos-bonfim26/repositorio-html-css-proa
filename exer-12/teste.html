@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #qualid {
+  margin: 5rem 0;
+  position: relative;
+  isolation: isolate;
+}
+
+#qualid::before,
+#qualid::after {
+  position: absolute;
+  content: "";
+  background-color: var(--black);
+  inset: 0;
+  z-index: -1;
+}
+
+#qualid::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+  transform: skewY(8deg);
+}
+
+#qualid::after {
+  -webkit-clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+  transform: skewY(-8deg);
+}
+
+.container-qualid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.qualid-img img {
+  max-width: 550px;
+  margin: auto;
+}
+
+.qualid-content {
+  margin: auto;
+}
+
+.qualid-content #qualid{
+  width: 100%;
+  margin-bottom: 4rem;
+  color: var(--white);
+}
+
+.qualid-content ul {
+  list-style: none;
+  max-width: 400px;
+}
+
+.qualid-content li {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  color: var(--white);
+}
+
+.qualid-content li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  height: 12px;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+</style>
+<body>
+    <section class="feature">
+        <div class="section__container feature__container">
+          <div class="feature__image">
+            <img src="assets/features.jpg" alt="feature" />
+          </div>
+          <div class="feature__content">
+            <h2 class="section__header">03 FEATURES</h2>
+            <ul>
+              <li>
+                SINGLE CYLINDER, FOUR STROKE, LIQUID COOLED, SI ENGINE, DOHC BSVVI
+                COMPLIANT
+              </li>
+              <li>CONSTANT MESH 6 SPPEED</li>
+              <li>MONO SHOCK ABSORBER, 7 STEP ADJUSTABLE</li>
+              <li>DISC WITH FLOATING CALIPER AND ABS</li>
+              <li>DOUBLE CRADLE TUBULAR FRAME</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
