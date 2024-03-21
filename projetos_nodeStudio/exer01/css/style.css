@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --azul: #3560F9;
+    --azul-clarinho: #355ff948;
+    --branco:#ffffff;
+    --preto:#000000;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Petrona", serif;
+}
+.title{
+    font-family: "Peralta", serif;
+}
+header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(80deg, #3560F9, #355ff948) no-repeat;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.5rem;
+}
+.search input, button{
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: #000000 2px solid;
+}
+.search button{
+    color: var(--branco);
+    background-color: var(--preto);
+}
+nav{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--preto);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    color: var(--branco);
+    margin-right: 0.6rem;
+    transition: all 0.5s ease-in-out;
+    
+}
+.menu li:hover{
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.menu strong li{
+    color: var(--azul);
+}
+.redes li{
+    background-color: var(--branco);
+    margin-left: 0.6rem;
+    padding: 0.4rem 0.4rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    text-align: center;
+    font-size: 1.5rem;
+   border-radius: 50%;
+   transition: 0.5s all ease;
+}
+.redes li:hover{
+    background-color:transparent;
+    color: var(--azul);
+    border: 1px solid #3560F9;
+}
+main{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+section{
+display: flex;
+align-items: center;
+flex-direction: column;
+width: 70%;
+}
+.burguer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.3rem solid #bcbcc0;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.img-burguer{
+    width: 30%;
+    height: 100%;
+}
+.img-burguer img{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    width: 45%;
+}
+.button{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.button h3{
+font-size: 2rem;
+}
+.button button{
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    color: var(--branco);
+    background-color: var(--azul);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+aside{
+    width: 30%;
+    padding: 2rem 0rem;
+    background-color: #e2e2e9;
+    border-radius: 0.5rem;
+}
+aside h2{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+   margin-bottom: 1rem;
+}
+.mapa{
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+.sobre{
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+footer{
+    padding: 2rem;
+    color: var(--branco);
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 8rem;
+    height: 8rem;
+}
+.nomeLogo h2{
+    font-size: 2rem;
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+.form input, textarea{
+    background-color: transparent;
+    border-radius: 0.3rem;
+    border: 2px solid #bcbcc0;
+    color: #bcbcc0;
+    margin-top: 0.4rem;
+}
+.cardfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .redes ul{
+    display: flex;
+    color: var(--preto);
+    margin-bottom: 0.5rem;
+}
+.menu_footer{
+    margin-top: 0.5rem;
+}
+.menu_footer li{
+    margin-bottom: 0.4rem;
+}
+.menu_footer li:hover{
+    color: var(--azul);
+}

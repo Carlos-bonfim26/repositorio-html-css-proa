@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+:root{
+    --preto:#12130F;
+    --amarelo:#FFBA08;
+    --cinza:#86836D;
+    --branco:#F2F2F2;
+    --cinza2:#dadada;
+}
+*{
+   
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Gudea", sans-serif;
+}
+body{
+    background-color: var(--branco);
+    width: 100%;
+    height: 100%;
+}
+.title{
+    font-family: "Black Ops One", system-ui;
+}
+header{
+    width: 100%;
+    padding: 3% 4%;
+    float: left;
+    background-color: var(--preto);
+}
+img{
+    max-width: 100%;
+}
+/* menu */
+.logo{
+    width: 3.5rem;
+    height: 3.5rem;
+    float: left;
+    background: url(../img/logoCyclo-removebg-preview.png) center center/3.5rem no-repeat;
+    font-size: 0;
+}
+#btn-menu{
+    height: 3.5rem;
+    width: 3.5rem;
+    float: right;
+    text-align: center;
+    color: var(--amarelo);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+}
+#menu{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #12130fbe;
+}
+#btn-close{
+    font-size: 2.5rem;
+    color: var(--amarelo);
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+}
+#menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#menu ul a{
+    color: var(--branco);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 1.5% 3%;
+}
+#menu ul a:hover{
+    color: var(--amarelo);
+    border-bottom: 1px solid #FFBA08;
+}
+/* banner */
+.banner{
+    width: 100%;
+    padding: 3% 4%;
+    text-align: center;
+    float: left;
+    background: url(../img/2148696744.jpg) no-repeat fixed ;
+   background-size: cover;
+   
+}
+.card-banner{
+    background-color: #f2f2f26b;
+    width: 70%;
+    padding: 3% 4%;
+    border-radius: 0.5rem;
+}
+main{
+  
+    padding: 3% 4%;
+    width: 100%;
+}
+.bike{
+    margin-top: 2%;
+    padding: 3% 4%;
+    background-color: var(--cinza2);
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    float: left;
+    text-align: left;
+}
+.bike img{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.bike-text{
+    padding: 7%;
+    line-height: 1.5rem;
+}
+.bike-btn{
+    width: 100%;
+    padding: 3% 4%;
+}
+.bike-btn button{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 2% 0%;
+    border: var(--preto) 2px solid;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.container-form{
+    float: left;
+    display: flex;
+    background-color: var(--amarelo);
+  flex-direction: column;
+    padding: 5% 4%;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+}
+.container-form input{
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 2% 2%;
+    border: var(--cinza) 2px solid;
+    border-radius: 0.5rem;
+}
+footer{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--preto);
+    text-align: center;
+}
+footer h2{
+    color:var(--amarelo);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    padding: 3% 4%;
+    float: left;
+    justify-content: center;
+}
+.icons i{
+    margin: 5%;
+    font-size: 1.5rem;
+    color: var(--amarelo);
+}
+@media (min-width:630px) {
+    .logo{
+        width: 5rem;
+        height: 5rem;
+        background: url(../img/logoCyclo-removebg-preview.png) center center/8rem no-repeat;
+    }
+    #btn-menu{
+        font-size: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+    .card-banner{
+        width: 50%;
+    }
+    .icons i{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width:1024px){
+    .logo{
+        width: 8rem;
+        height: 8rem;
+        background: url(../img/logoCyclo-removebg-preview.png) center center/12.5rem no-repeat;
+       
+    }
+    #btn-menu{
+        font-size: 4rem;
+        height: 8rem;
+        width: 8rem;
+    }
+    #btn-close{
+        font-size: 4rem;
+        height: 8rem;
+        width: 8rem;
+    }
+    #menu ul a{
+        font-size: 2.6rem;
+        line-height: 6rem;
+    }
+    footer h2{
+        font-size: 3rem;
+    }
+    .card-banner{
+        width: 40%;
+    }
+    .card-banner h2{
+        font-size: 2.8rem;
+    }
+    .card-banner h3{
+        font-size: 1.5rem;
+    }
+    .container-form h2{
+        font-size: 3rem;
+    }
+    .container-form h3{
+        font-size: 1.8rem;
+    }
+    .container-form input{
+        font-size: 1.8rem;
+    }
+    .icons i{
+        font-size: 4.5rem;
+    }
+   main{
+    display: flex;
+    width: 100%;
+   }
+   .bike{
+    margin: 2%;
+    width: 30%;
+   }
+}
